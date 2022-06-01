@@ -4,3 +4,4 @@
 .pnp.js
 
 .env
+.env.development
