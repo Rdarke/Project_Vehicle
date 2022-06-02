@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import axios from 'axios';
-import logo from './logo.svg';
 import './App.css';
 import Button from "@mui/material/Button";
+import Navbar from '../navbar';
 
 function App() {
   const [ state, setState ] = useState({
@@ -21,6 +22,8 @@ function App() {
 
   return (
     <div className="App">
+    <Router>
+    <Navbar></Navbar>
         <h1>{ state.message }</h1>
         <Button onClick={fetchData} variant="contained" color="primary">
           Fetch Data
@@ -28,6 +31,7 @@ function App() {
         <Button variant="contained" color="primary">
       Hello World
     </Button>
+    </Router>
     </div>
   );
 };
