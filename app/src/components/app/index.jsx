@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import logo from './logo.svg';
 import './App.css';
+import Button from "@mui/material/Button";
 
 function App() {
   const [ state, setState ] = useState({
@@ -21,9 +22,12 @@ function App() {
   return (
     <div className="App">
         <h1>{ state.message }</h1>
-        <button onClick={fetchData} >
+        <Button onClick={fetchData} variant="contained" color="primary">
           Fetch Data
-        </button> 
+        </Button>
+        <Button variant="contained" color="primary">
+      Hello World
+    </Button>
     </div>
   );
 };
