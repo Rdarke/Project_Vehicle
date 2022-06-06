@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import axios from 'axios';
-import './App.css';
+import './App.scss';
 import Button from "@mui/material/Button";
 import Navbar from '../navbar';
 
