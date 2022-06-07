@@ -1,6 +1,6 @@
 import React from 'react';
 import classNames from 'classnames';
-import 'button.scss';
+import './button.scss';
 
 function Button (props) {
   const buttonClass = classNames("button", {
@@ -19,4 +19,4 @@ function Button (props) {
   )
 };
 
-export default Button; 
+export default Button;

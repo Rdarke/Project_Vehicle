@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import axios from 'axios';
 import './App.scss';
-import Button from "@mui/material/Button";
 import Navbar from '../navbar';
+import Button from '../button'
 
 function App() {
   const [ state, setState ] = useState({
@@ -25,12 +25,7 @@ function App() {
     <Router>
     <Navbar></Navbar>
         <h1>{ state.message }</h1>
-        <Button onClick={fetchData} variant="contained" color="primary">
-          Fetch Data
-        </Button>
-        <Button variant="contained" color="primary">
-      Hello World
-    </Button>
+        <Button onClick={console.log("Hi there")} >Click Me</Button>
     </Router>
     </div>
   );
