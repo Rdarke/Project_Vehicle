@@ -21,13 +21,28 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <main className="layout">
     <Router>
-    <Navbar></Navbar>
-        <h1>{ state.message }</h1>
-        <Button onClick={console.log("Hi there")} >Click Me</Button>
+
+    <section className="sidebar">
+
+    <hr className="sidebar__separator sidebar--centered" />
+    <nav className="sidebar__menu" >
+    
+    <h2>Home</h2>
+    <h2>My Collection</h2>
+    <h2>Project +</h2>
+    <h2>Project Search</h2>
+
+    </nav>
+    </section>
+
+    <section className="content">
+    <h3>This is the content section!</h3>
+    </section>
+
     </Router>
-    </div>
+    </main>
   );
 };
 
