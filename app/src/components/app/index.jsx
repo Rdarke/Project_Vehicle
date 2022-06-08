@@ -1,7 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import axios from 'axios';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Navbar from '../navbar';
+import Button from '../button'
 
 function App() {
   const [ state, setState ] = useState({
@@ -19,12 +21,28 @@ function App() {
   };
 
   return (
-    <div className="App">
-        <h1>{ state.message }</h1>
-        <button onClick={fetchData} >
-          Fetch Data
-        </button> 
-    </div>
+    <main className="layout">
+    <Router>
+
+    <section className="sidebar">
+
+    <hr className="sidebar__separator sidebar--centered" />
+    <nav className="sidebar__menu" >
+    
+    <h2>Home</h2>
+    <h2>My Collection</h2>
+    <h2>Project +</h2>
+    <h2>Project Search</h2>
+
+    </nav>
+    </section>
+
+    <section className="content">
+    <h3>This is the content section!</h3>
+    </section>
+
+    </Router>
+    </main>
   );
 };
 
