@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import MenuItem from './MenuItem';
+import classNames from 'classnames';
 import './Sidebar.scss';
 
 function Sidebar (props) {
@@ -10,14 +12,11 @@ function Sidebar (props) {
     <hr className="sidebar__separator sidebar--centered" />
     <nav className="sidebar__menu" >
     
-    <h2>Home</h2>
-    <h2>My Collection</h2>
-    <h2>Project +</h2>
-    <h2>Project Search</h2>
+    <MenuItem></MenuItem>
 
     </nav>
     </section>
   )
 };
 
-export default Sidebar
+export default Sidebar;
