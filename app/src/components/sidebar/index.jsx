@@ -17,6 +17,16 @@ function Sidebar (props) {
     selected={true}
     setMenuItem={props.setMenuItem}
     ></MenuItem>
+    <MenuItem
+    name={"My Garage"}
+    selected={false}
+    setMenuItem={props.setMenuItem}
+    ></MenuItem>
+    <MenuItem
+    name={"Search"}
+    selected={false}
+    setMenuItem={props.setMenuItem}
+    ></MenuItem>
 
     </nav>
     </section>
