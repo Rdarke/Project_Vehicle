@@ -12,7 +12,11 @@ function Sidebar (props) {
     <hr className="sidebar__separator sidebar--centered" />
     <nav className="sidebar__menu" >
     
-    <MenuItem></MenuItem>
+    <MenuItem
+    name={"Home"}
+    selected={false}
+    setMenuItem={props.setMenuItem}
+    ></MenuItem>
 
     </nav>
     </section>
