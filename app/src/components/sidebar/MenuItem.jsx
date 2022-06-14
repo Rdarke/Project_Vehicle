@@ -1,4 +1,5 @@
 import classNames from 'classnames';
+import "./MenuItem.scss";
 
 function MenuItem (props) {
   const { setMenuItem, name, selected } = props;
@@ -8,7 +9,9 @@ function MenuItem (props) {
   });
 
   return (
-    <h1>Hello!</h1>
+    <li className={menuItemClass} onClick={() => setMenuItem(name)}>
+    <h2>{name}</h2>
+    </li>
   );
 };
 

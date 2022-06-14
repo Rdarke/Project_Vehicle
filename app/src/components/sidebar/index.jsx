@@ -14,7 +14,7 @@ function Sidebar (props) {
     
     <MenuItem
     name={"Home"}
-    selected={false}
+    selected={true}
     setMenuItem={props.setMenuItem}
     ></MenuItem>
 
