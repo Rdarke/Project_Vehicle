@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import axios from 'axios';
 import './App.scss';
+import Sidebar from '../sidebar';
 import Navbar from '../navbar';
 import Button from '../button'
 
@@ -24,18 +25,7 @@ function App() {
     <main className="layout">
     <Router>
 
-    <section className="sidebar">
-
-    <hr className="sidebar__separator sidebar--centered" />
-    <nav className="sidebar__menu" >
-    
-    <h2>Home</h2>
-    <h2>My Collection</h2>
-    <h2>Project +</h2>
-    <h2>Project Search</h2>
-
-    </nav>
-    </section>
+    <Sidebar></Sidebar>
 
     <section className="content">
     <h3>This is the content section!</h3>
