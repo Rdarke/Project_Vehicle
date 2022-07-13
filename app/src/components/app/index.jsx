@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import axios from 'axios';
 import './App.scss';
 import Sidebar from '../sidebar';
-import Navbar from '../navbar';
-import Button from '../button'
+// import Navbar from '../navbar';
+// import Button from '../button'
 
 function App() {
   const [ state, setState ] = useState({
