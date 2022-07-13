@@ -28,7 +28,7 @@ function App() {
     <Sidebar></Sidebar>
     <Routes>
 
-    <Route path="/my-favourites" element={<p>I like these</p>}>
+    <Route path="/my-favorites" element={<p>I like these</p>}>
     </Route>
 
     <Route path="/my-garage" element={<p>This is the garage!</p>}>
