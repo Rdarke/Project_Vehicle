@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Routes, Switch } from 'react-router-dom';
 import axios from 'axios';
 import './App.scss';
 import Sidebar from '../sidebar';
@@ -26,10 +26,23 @@ function App() {
     <Router>
 
     <Sidebar></Sidebar>
+    <Routes>
 
-    <section className="content">
+    <Route path="/my-favourites" element={<p>I like these</p>}>
+    </Route>
+
+    <Route path="/my-garage" element={<p>This is the garage!</p>}>
+    </Route>
+
+    <Route path="/search" element={<p>This is the search!</p>}>
+    </Route>
+
+    <Route path="/home" element={<section className="content">
     <h3>This is the content section!</h3>
-    </section>
+    </section>}>
+    </Route>
+
+    </Routes>
 
     </Router>
     </main>
