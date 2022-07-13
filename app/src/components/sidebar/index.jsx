@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import MenuItem from "./MenuItem";
-import classNames from "classnames";
 import "./Sidebar.scss";
 
 function Sidebar(props) {
   const [selected, setSelected] = useState("");
 
   const updateSelected = (name) => {
-    setSelected(name)
+    setSelected(name);
   };
 
   return (
