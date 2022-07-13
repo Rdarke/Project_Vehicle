@@ -1,23 +1,15 @@
-import React, { useState } from "react";
+import React from "react";
 import classNames from "classnames";
 import "./MenuItem.scss";
 
 function MenuItem(props) {
-  const [style, setStyle] = useState(false);
   const { setMenuItem, name, selected } = props;
   const menuItemClass = classNames("menu-list__item", {
-    "menu-list__item--selected": style,
+    "menu-list__item--selected": selected === name,
   });
-
-  const checkStyle = () => {
-    if (selected === name) {
-      setStyle(true);
-    };
-  }
 
   const saveMenu = () => {
     setMenuItem(name);
-    checkStyle();
   };
 
   return (
@@ -25,6 +17,6 @@ function MenuItem(props) {
       <h2>{name}</h2>
     </li>
   );
-}
+};
 
 export default MenuItem;
