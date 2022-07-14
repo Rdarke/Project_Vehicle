@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes, Switch } from 'react-router-dom
 import axios from 'axios';
 import './App.scss';
 import Sidebar from '../sidebar';
+import VehicleCard from '../vehicleCard';
 // import Navbar from '../navbar';
 // import Button from '../button'
 
@@ -39,6 +40,7 @@ function App() {
 
     <Route path="/home" element={<section className="content">
     <h3>This is the content section!</h3>
+    <VehicleCard></VehicleCard>
     </section>}>
     </Route>
 
