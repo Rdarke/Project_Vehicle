@@ -23,5 +23,3 @@ function VehicleCard(props) {
 };
 
 export default VehicleCard;
-
-// https://www.motortrend.com/uploads/sites/5/2019/10/SEMA-2019-Hellwig-Ford-Ranger.jpg
