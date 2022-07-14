@@ -13,10 +13,20 @@ $radius: 0.2rem;
   padding: 0;
 }
 
+.wrapper {
+  display: flexbox;
+  flex-direction: row;
+//   grid-template-columns: repeat(auto-fit,
+//   minmax(12rem, 30rem));
+//   gap: 2rem;
+//   justify-content: center;
+}
+
 .card {
   overflow: hidden;
   box-shadow: 0 2px 20px $nardoGrey;
   border-radius: $radius;
+  margin: 0.4rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

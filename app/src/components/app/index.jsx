@@ -42,6 +42,9 @@ function App() {
     <h3>This is the content section!</h3>
     <VehicleCard></VehicleCard>
     <VehicleCard></VehicleCard>
+    <VehicleCard></VehicleCard>
+    <VehicleCard></VehicleCard>
+    <VehicleCard></VehicleCard>
     </section>}>
     </Route>
 

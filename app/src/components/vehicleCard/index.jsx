@@ -6,6 +6,7 @@ import Button from '../button';
 function VehicleCard(props) {
 
   return (
+    <div className="wrapper">
     <div className="card">
       <div className="card__body">
         <img src="https://www.motortrend.com/uploads/sites/5/2019/10/SEMA-2019-Hellwig-Ford-Ranger.jpg" className="card__image"/>
@@ -14,6 +15,7 @@ function VehicleCard(props) {
       </div>
       {/* <button className="card__btn">View More</button> */}
       <Button title={"Explore"}></Button>
+    </div>
     </div>
   )
 };
