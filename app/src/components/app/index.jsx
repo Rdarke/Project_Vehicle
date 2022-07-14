@@ -40,6 +40,8 @@ function App() {
 
     <Route path="/home" element={<section className="content">
     <h3>This is the content section!</h3>
+    
+    
     <VehicleCard
       heroImage={"https:www.motortrend.com/uploads/sites/5/2019/10/SEMA-2019-Hellwig-Ford-Ranger.jpg"}
       title={"MotorTrend Masterpiece"}
@@ -64,6 +66,8 @@ function App() {
       make={"Ford - Ranger - 2020"}
       description={"Something clever about this build. I like to go fast like Ricky Bobby and some more information to make this description long enough for testing screen widths...etc"}
       ></VehicleCard>
+
+      
     </section>}>
     </Route>
 
