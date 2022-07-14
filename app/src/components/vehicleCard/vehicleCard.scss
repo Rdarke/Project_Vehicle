@@ -24,7 +24,7 @@ $radius: 0.2rem;
 
 .card {
   overflow: hidden;
-  box-shadow: 0 2px 20px $nardoGrey;
+  box-shadow: 0 2px 10px $nardoGrey;
   border-radius: $radius;
   margin: 0.4rem;
   display: flex;
@@ -32,6 +32,7 @@ $radius: 0.2rem;
   justify-content: space-between;
   cursor: pointer;
   transition: transform 200ms ease-in;
+  padding: 1rem;
 
   &__image {
     height: 18rem;
@@ -41,6 +42,10 @@ $radius: 0.2rem;
 
   &__title {
     padding: 1rem;
+  }
+
+  &__make {
+    padding: 0 1rem;
   }
 
   &__description {
