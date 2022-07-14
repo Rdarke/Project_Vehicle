@@ -41,6 +41,7 @@ function App() {
     <Route path="/home" element={<section className="content">
     <h3>This is the content section!</h3>
     <VehicleCard></VehicleCard>
+    <VehicleCard></VehicleCard>
     </section>}>
     </Route>
 
