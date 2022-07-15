@@ -4,7 +4,7 @@ import Button from '../button';
 
 
 function VehicleCard(props) {
-  const {heroImage, title, make, description} = props;
+  const { heroImage, title, make, description } = props;
 
   return (
     <div className="wrapper">

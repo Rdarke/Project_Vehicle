@@ -2,17 +2,24 @@ import { useState } from "react";
 
 function Form(props) {
   const [myOption, setMyOption] = useState("Alpha");
+  const { options, saveSelection } = props;
 
   const handleChange = (event) => {
-    setMyCar(event.target.value)
+    setMyOption(event.target.value)
+  }
+
+  const displayOptions = () => {
+    options.forEach(element => {
+      return (
+        <option value={element}>{element}</option>
+      )
+    });
   }
 
   return (
     <form>
-      <select value={myCar} onChange={handleChange}>
-        <option value="Ford">Ford</option>
-        <option value="Volvo">Volvo</option>
-        <option value="Fiat">Fiat</option>
+      <select value={myOption} onChange={handleChange}>
+      {displayOptions}
       </select>
     </form>
   )
