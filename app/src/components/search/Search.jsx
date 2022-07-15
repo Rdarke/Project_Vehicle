@@ -8,8 +8,9 @@ function Search(props) {
     year: ""
   })
 
+  // currently one step behind user input...! (Bug fix)
   const saveSelection = (data) => {
-    setState({...state, data})
+    setState({...state, make:data})
   }
 
   return (

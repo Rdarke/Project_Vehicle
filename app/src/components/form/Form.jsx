@@ -1,24 +1,25 @@
 import { useState } from "react";
 
 function Form(props) {
-  const [myOption, setMyOption] = useState("");
+  const [myOption, setMyOption] = useState();
   const { options, saveSelection } = props;
 
   const handleChange = (event) => {
-    event.preventDefault();
-    setMyOption(event.target.value);
+    setMyOption(event.target.value)
+    console.log("Handling the change! state is now", myOption)
     share();
   };
 
   const share = () => {
+    console.log("My selection is currently", myOption)
     saveSelection(myOption)
   };
 
   return (
-    <form>
-      <select value={myOption} onChange={handleChange}>
+    <form className="form">
+      <select classname="form__selection" value={myOption} onChange={handleChange}>
         {options.map((element) => (
-          <option value={element}>{element}</option>
+          <option classname="form__option" value={element}>{element}</option>
         ))}
       </select>
     </form>
