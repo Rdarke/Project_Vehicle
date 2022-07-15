@@ -1,0 +1,61 @@
+@import "../../styles/variables.scss";
+@import "../../styles/typography.scss";
+@import "../../styles/mixins.scss";
+
+// border radius!!
+$radius: 0.2rem;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  display: flexbox;
+  flex-direction: row;
+//   grid-template-columns: repeat(auto-fit,
+//   minmax(12rem, 30rem));
+//   gap: 2rem;
+//   justify-content: center;
+}
+
+.card {
+  overflow: hidden;
+  box-shadow: 0 2px 10px $nardoGrey;
+  border-radius: $radius;
+  margin: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 200ms ease-in;
+  padding: 1rem;
+
+  &__image {
+    height: 18rem;
+    width: 100%;
+    object-fit:scale-down;
+  }
+
+  &__title {
+    padding: 1rem;
+  }
+
+  &__make {
+    padding: 0 1rem;
+  }
+
+  &__description {
+    padding: 0 1rem;
+  }
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+
+
