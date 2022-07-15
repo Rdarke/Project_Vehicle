@@ -1,28 +1,26 @@
 import { useState } from "react";
 
 function Form(props) {
-  const [myOption, setMyOption] = useState("Alpha");
+  const [myOption, setMyOption] = useState("Make");
   const { options, saveSelection } = props;
 
   const handleChange = (event) => {
-    setMyOption(event.target.value)
-  }
+    setMyOption(event.target.value);
+  };
 
-  const displayOptions = () => {
-    options.forEach(element => {
-      return (
-        <option value={element}>{element}</option>
-      )
-    });
-  }
+  const share = () => {
+    saveSelection(myOption)
+  };
 
   return (
     <form>
-      <select value={myOption} onChange={handleChange}>
-      {displayOptions}
+      <select value={myOption} onChange={handleChange, share}>
+        {options.map((element) => (
+          <option value={element}>{element}</option>
+        ))}
       </select>
     </form>
-  )
+  );
 }
 
 export default Form;
