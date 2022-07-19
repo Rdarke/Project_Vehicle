@@ -10,7 +10,7 @@ function Search(props) {
 
   // currently one step behind user input...! (Bug fix)
   const saveSelection = (data) => {
-    setState({...state, make:data})
+    setState(prev => ({...prev, make:data}))
   }
 
   return (
