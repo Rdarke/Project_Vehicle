@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from "react";
+import { useState } from "react";
 
 function Form(props) {
   const [myOption, setMyOption] = useState();
