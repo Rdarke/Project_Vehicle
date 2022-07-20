@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import "./vehicleCard.scss";
+import "./VehicleCard.scss";
 import Button from '../button';
 
 
