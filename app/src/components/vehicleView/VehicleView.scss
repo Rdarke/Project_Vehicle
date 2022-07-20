@@ -1,0 +1,29 @@
+// @import "../../styles/variables.scss";
+// @import "../../styles/typography.scss";
+// @import "../../styles/mixins.scss";
+
+.vehicleView {
+  display: flexbox;
+  flex-direction: column;
+  padding: 2em;
+  margin: 2em;
+  background-color: lightblue;
+
+  &__title {
+    background-color: khaki;
+  }
+
+  &__hero {
+    flex-direction: row;
+  }
+
+  &__image {
+    height: 25rem;
+    width: 32rem;
+  }
+
+  &__details {
+    background-color: lawngreen;
+    flex-direction: column;
+  }
+}
