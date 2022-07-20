@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import Gallery from "./Gallery";
 import "./VehicleView.scss";
 
 function VehicleView() {
@@ -12,8 +13,7 @@ function VehicleView() {
           Title Goes Here! & Here & Here & Here & Here &........
         </h2>
         <div className={"vehicleView__hero"}>
-        <img className={"vehicleView__image"}
-        src="https://img.freepik.com/premium-vector/different-type-cars-illustration-set-car-symbol-collection-car-icon-pack_7450-493.jpg?w=2000"/>
+        <Gallery></Gallery>
         <ul className={"vehicleView__details"}>
         <li>Make: Ford</li>
         <li>Model: Ranger</li>
