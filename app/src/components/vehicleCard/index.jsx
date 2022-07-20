@@ -17,7 +17,7 @@ function VehicleCard(props) {
         <h3 className="card__make">{make}</h3>
         <p className="card__description">{description}</p>
       </div>
-      <Link to={`/${link}`} style={{ color: 'inherit', textDecoration: 'inherit'}}>
+      <Link to={`${link}`} style={{ color: 'inherit', textDecoration: 'inherit'}}>
       <Button title={"Explore"}></Button>
       </Link>
     </div>

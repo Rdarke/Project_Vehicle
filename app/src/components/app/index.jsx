@@ -1,14 +1,10 @@
 import React, { useState, useEffect } from "react";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Switch,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import axios from "axios";
 import "./App.scss";
 import Sidebar from "../sidebar";
 import VehicleCard from "../vehicleCard";
+import VehicleView from '../vehicleView/VehicleView';
 import Search from "../search/Search";
 import mockVehicleData from "../../mockData/vehicleCardMock.json";
 // import Navbar from '../navbar';
@@ -39,7 +35,7 @@ function App() {
         title={vehicle.title}
         make={vehicle.make}
         description={vehicle.description}
-        link={`/vehicle-view/id:${vehicle.id}`}
+        link={`/vehicle-view/${vehicle.id}`}
       ></VehicleCard>
     );
   });
@@ -49,6 +45,8 @@ function App() {
       <Router>
         <Sidebar></Sidebar>
         <Routes>
+          <Route path="/vehicle-view/:id" element={<VehicleView></VehicleView>}></Route>
+
           <Route path="/my-favorites" element={<p>I like these</p>}></Route>
 
           <Route path="/my-garage" element={<p>This is the garage!</p>}></Route>
