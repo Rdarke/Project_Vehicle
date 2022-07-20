@@ -807,7 +807,7 @@
       "Windstar"
     ]
   },
-  { "brand": "Hummer", "models": ["H2", "H3"] },
+  { "brand": "Hummer", "models": ["H1", "H2", "H3"] },
   {
     "brand": "Hyundai",
     "models": [

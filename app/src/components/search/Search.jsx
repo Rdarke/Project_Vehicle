@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Form from '../form/Form';
 import displayBrands from '../../helpers/displayBrands';
+import displayModels from '../../helpers/displayModels';
 import brandData from '../../mockData/brandData.json';
 
 function Search(props) {
@@ -24,7 +25,7 @@ function Search(props) {
       >
       </Form>
       <Form
-      options={[""]}
+      options={displayModels(brandData, state.make)}
       >
       </Form>
       <Form
