@@ -2,6 +2,8 @@ import React from "react";
 import { Carousel } from "react-carousel-minimal";
 
 function Gallery(props) {
+  
+  // Remove with use of prop drilling.
   const mockData = [
     {
       image:
@@ -24,33 +26,31 @@ function Gallery(props) {
 
   const style = {
     textAlign: "center",
-    maxWidth: "850px",
-    maxHeight: "500px",
-    margin: "40px auto",
-  };
+    maxWidth: "890px",
+    maxHeight: "600px",
+    margin: "auto",
+    };
 
   return (
-    <div className={"carousel"}>
+    
       <Carousel
         data={mockData}
-        width="850px"
+        width="890px"
         height="500px"
         captionStyle={captionStyle}
         radius="10px"
         slideNumber={true}
         slideNumberStyle={slideNumberStyle}
-        captionPosition="bottom"
         automatic={false}
         dots={true}
         pauseIconColor="white"
         pauseIconSize="40px"
-        slideBackgroundColor="darkgrey"
-        slideImageFit="cover"
+        slideBackgroundColor="lightgrey"
+        slideImageFit="contain"
         thumbnails={true}
         thumbnailWidth="100px"
         style={style}
       ></Carousel>
-    </div>
   );
 }
 

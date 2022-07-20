@@ -14,8 +14,9 @@ body {
 
 .layout {
   display: flex;
+  flex-direction: row;
   min-height: 100vh;
-  width: auto;
+  width: 100vw;
 }
 
 @media only screen and (max-width: 960px) {
