@@ -39,6 +39,7 @@ function App() {
         title={vehicle.title}
         make={vehicle.make}
         description={vehicle.description}
+        link={`/vehicle-view/id:${vehicle.id}`}
       ></VehicleCard>
     );
   });
