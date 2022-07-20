@@ -5,6 +5,7 @@ import './App.scss';
 import Sidebar from '../sidebar';
 import VehicleCard from '../vehicleCard';
 import Search from '../search/Search';
+import mockVehicleData from '../../mockData/vehicleCardMock.json';
 // import Navbar from '../navbar';
 // import Button from '../button'
 
