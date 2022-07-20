@@ -14,7 +14,7 @@ function Form(props) {
     <form className="form">
       <select classname="form__selection" value={myOption} onChange={handleChange}>
         {options.map((element) => (
-          <option classname="form__option" value={element}>{element}</option>
+          <option className="form__option" value={element} key={element}>{element}</option>
         ))}
       </select>
     </form>
