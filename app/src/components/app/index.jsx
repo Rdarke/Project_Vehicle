@@ -31,6 +31,7 @@ function App() {
     return (
       <VehicleCard
         key={vehicle.id}
+        id={vehicle.id}
         heroImage={vehicle.heroImage}
         title={vehicle.title}
         make={vehicle.make}
@@ -45,7 +46,7 @@ function App() {
       <Router>
         <Sidebar></Sidebar>
         <Routes>
-          <Route path="/vehicle-view/:id" element={<VehicleView></VehicleView>}></Route>
+          <Route path="/vehicle-view/:id" exact element={<VehicleView></VehicleView>}></Route>
 
           <Route path="/my-favorites" element={<p>I like these</p>}></Route>
 
