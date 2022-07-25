@@ -1,0 +1,29 @@
+@import "../../styles/typography.scss";
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+
+.vehicle__wrapper {
+  display: flex;
+  background-color: gray;
+  font-family: $font-family;
+}
+
+.vehicle__wrapper > * {
+  width: 100%;
+}
+
+.vehicle {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 1em;
+  margin: 0.1em;
+  background-color: white;
+}
+
+.gallery__wrapper {
+  padding: 0.3em;
+  margin: 0.1em;
+  min-height: 100vh;
+  background-color: honeydew;
+  }

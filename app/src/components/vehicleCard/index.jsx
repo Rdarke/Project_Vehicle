@@ -1,10 +1,11 @@
 import React from "react";
-import "./vehicleCard.scss";
+import { Link } from 'react-router-dom';
+import "./VehicleCard.scss";
 import Button from '../button';
 
 
 function VehicleCard(props) {
-  const { heroImage, title, make, description } = props;
+  const { heroImage, title, make, description, link } = props;
 
   return (
     <div className="wrapper">
@@ -16,7 +17,9 @@ function VehicleCard(props) {
         <h3 className="card__make">{make}</h3>
         <p className="card__description">{description}</p>
       </div>
+      <Link to={`${link}`} style={{ color: 'inherit', textDecoration: 'inherit'}}>
       <Button title={"Explore"}></Button>
+      </Link>
     </div>
     </div>
   )
